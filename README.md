@@ -1,5 +1,5 @@
-# 2017-rabbitmq-prednaska
-Tomáš Sedláček "Asynchronní integrace aplikací - RabbitMQ" - symfony sraz Hradec Králové, březen 2017
+# Tomáš Sedláček "Asynchronní integrace aplikací - RabbitMQ"
+### RabbitMQ" - symfony sraz Hradec Králové, březen 2017
 Prezentace dostupná na adrese: https://prezi.com/p0gzzfnolbr4/asynchronni-integrace-aplikaci-rabbitmq/
 Všechny zdrojové kódy jsou v tomto repozitáři. 
 
