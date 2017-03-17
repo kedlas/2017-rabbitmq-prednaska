@@ -14,7 +14,6 @@ class Message {
 
     this.jobId = `${headers.job_id}`;
     this.id = `${headers.job_id}:${uuid()}`;
-    this.sequenceId = Number.parseInt(headers.sequence_id, 10);
     this.content = content;
   }
 

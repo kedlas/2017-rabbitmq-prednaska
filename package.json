@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/kedlas/2017-rabbitmq-prednaska#readme",
   "dependencies": {
+    "amqplib": "^0.5.1",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",
     "uuid": "^3.0.1"
