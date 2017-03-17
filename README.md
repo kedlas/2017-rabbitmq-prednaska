@@ -19,7 +19,7 @@ http://host:15672/ (e.g.: http://localhost:15672/#/)
 ### Demo Sorter/Resequencer
 
 ```
-$ https://github.com/kedlas/2017-rabbitmq-prednaska.git
+$ git clone https://github.com/kedlas/2017-rabbitmq-prednaska.git
 $ cd 2017-rabbitmq-prednaska
 $ npm install
 $ cd src
