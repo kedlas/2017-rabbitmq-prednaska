@@ -1,6 +1,6 @@
 const should = require('chai').should();
 
-const Message = require('./../src/message');
+const Message = require('./../src/sequenced_message');
 const Resequencer = require('./../src/resequencer');
 
 /**

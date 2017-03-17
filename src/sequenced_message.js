@@ -2,7 +2,7 @@
 const assert = require('assert');
 const uuid = require('uuid/v1');
 
-class Message {
+class SequencedMessage {
 
   /**
    *
@@ -11,6 +11,7 @@ class Message {
    */
   constructor(headers, content) {
     assert(headers.job_id, 'Missing \'job_id\' message header.');
+    assert(headers.sequence_id, 'Missing \'sequence_id\' message header.');
 
     this.jobId = `${headers.job_id}`;
     this.id = `${headers.job_id}:${uuid()}`;
@@ -36,6 +37,14 @@ class Message {
 
   /**
    *
+   * @return {Number}
+   */
+  getSequenceId() {
+    return this.sequenceId;
+  }
+
+  /**
+   *
    * @return {string}
    */
   getContent() {
@@ -44,4 +53,4 @@ class Message {
 
 }
 
-module.exports = Message;
+module.exports = SequencedMessage;
