@@ -27,7 +27,7 @@ amqp.connect(conf.rabbit.url, (connErr, conn) => {
 
       let i = 1;
       while (i <= conf.message_count) {
-        const random = randomInt(10, 1000);
+        const random = randomInt(10, 10000);
         const content = `Message ${i}. My processing should take ${random}ms`;
 
         ch.publish(conf.rabbit.exchange.name, '', new Buffer(content), {
