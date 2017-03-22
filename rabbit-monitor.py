@@ -27,8 +27,8 @@ def send_stats(host, username, password, vhost, namespace):
 
 if __name__ == "__main__":
     send_stats(
-        os.environ.get("AMQP_HOST") + ":" + os.environ.get("AMQP_PORT"),
-        os.environ.get("AMQP_USER"),
-        os.environ.get("AMQP_PASSWORD"),
+        "localhost:5672",
+        "guest",
+        "guest",
         "/",
         "rabbitmq_depth")

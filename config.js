@@ -1,6 +1,9 @@
+
+const rabbitHost = process.env.RABBIT_HOST || 'localhost';
+
 module.exports = {
   rabbit: {
-    url: 'amqp://localhost',
+    url: `amqp://${rabbitHost}`,
     exchange: {
       name: '2017-rabbitmq-symfony',
       type: 'fanout'
